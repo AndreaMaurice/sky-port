@@ -79,7 +79,7 @@ export default async function Post({ params }: Props) {
     <>
       <Breadcrumb pageName="Blog Details" />
 
-      <section className="pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
+      <section className="dark:bg-dark pt-20 pb-10 lg:pt-[120px] lg:pb-20">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4">
@@ -94,9 +94,9 @@ export default async function Post({ params }: Props) {
                   height={500}
                   className="h-full w-full object-cover object-center"
                 />
-                <div className="absolute left-0 top-0 z-10 flex h-full w-full items-end bg-gradient-to-t from-dark-700 to-transparent">
+                <div className="from-dark-700 absolute top-0 left-0 z-10 flex h-full w-full items-end bg-gradient-to-t to-transparent">
                   <div className="flex flex-wrap items-center p-4 pb-4 sm:p-8">
-                    <div className="mb-4 mr-5 flex items-center md:mr-10">
+                    <div className="mr-5 mb-4 flex items-center md:mr-10">
                       <div className="mr-4 h-10 w-10 overflow-hidden rounded-full">
                         <Image
                           src={post.authorImage}
@@ -180,12 +180,12 @@ export default async function Post({ params }: Props) {
                     <div className="-mx-4 mb-8 flex flex-wrap">
                       <div className="w-full px-4">
                         <h2
-                          className="wow fadeInUp relative pb-5 text-2xl font-semibold text-dark dark:text-white sm:text-[28px]"
+                          className="wow fadeInUp text-dark relative pb-5 text-2xl font-semibold sm:text-[28px] dark:text-white"
                           data-wow-delay=".1s"
                         >
                           Popular Articles
                         </h2>
-                        <span className="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
+                        <span className="bg-primary mb-10 inline-block h-[2px] w-20"></span>
                       </div>
                       {posts.slice(0, 3).map((blog, i) => (
                         <PopularArticle
@@ -220,10 +220,10 @@ export default async function Post({ params }: Props) {
               className="wow fadeInUp mt-14 w-full px-4"
               data-wow-delay=".2s"
             >
-              <h2 className="relative pb-5 text-2xl font-semibold text-dark dark:text-white sm:text-[28px]">
+              <h2 className="text-dark relative pb-5 text-2xl font-semibold sm:text-[28px] dark:text-white">
                 Related Articles
               </h2>
-              <span className="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
+              <span className="bg-primary mb-10 inline-block h-[2px] w-20"></span>
             </div>
 
             {posts.slice(0, 3).map((blog, key) => (

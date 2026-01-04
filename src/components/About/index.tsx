@@ -5,30 +5,27 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
+      className="bg-gray-1 dark:bg-dark-2 pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]"
     >
       <div className="container">
         <div className="wow fadeInUp" data-wow-delay=".2s">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
-                <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Brilliant Toolkit to Build Next.js SaaS Websites.
+                <h2 className="text-dark mb-5 text-3xl leading-tight font-bold sm:text-[40px] sm:leading-[1.2] dark:text-white">
+                  Building Modern Web Experiences That Scale
                 </h2>
-                <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel discussions and roundtables led by subject
-                  matter experts.
-                  <br /> <br />
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel.
+                <p className="text-body-color dark:text-dark-6 mb-10 text-base leading-relaxed">
+                  Sky Creatives partners with early-stage startups to build
+                  strong technical foundations that support long-term growth. We
+                  focus on reducing technical risk, accelerating time to market,
+                  and delivering scalable, production-ready products that can
+                  grow confidently as traction and users increase.
                 </p>
 
                 <Link
-                  href="#"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
+                  href="/about"
+                  className="bg-primary hover:bg-primary/90 inline-flex items-center justify-center rounded-md px-7 py-3 text-center text-base font-medium text-white duration-300"
                 >
                   Know More
                 </Link>
@@ -39,7 +36,7 @@ const About = () => {
               <div className="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
                 <div className="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                   <div
-                    className={`relative mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px] `}
+                    className={`relative mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]`}
                   >
                     <Image
                       src="/images/about/about-image-01.jpg"
@@ -60,20 +57,14 @@ const About = () => {
                     />
                   </div>
 
-                  <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
+                  <div className="bg-primary relative z-10 mb-4 flex items-center justify-center overflow-hidden px-6 py-12 sm:mb-8 sm:h-40 sm:p-5 lg:mb-4 xl:mb-8">
                     <div>
                       <span className="block text-5xl font-extrabold text-white">
-                        09
-                      </span>
-                      <span className="block text-base font-semibold text-white">
-                        We have
-                      </span>
-                      <span className="block text-base font-medium text-white/70">
-                        Years of experience
+                        Logo
                       </span>
                     </div>
                     <div>
-                      <span className="absolute left-0 top-0 -z-10">
+                      <span className="absolute top-0 left-0 -z-10">
                         <svg
                           width="106"
                           height="144"
@@ -109,7 +100,7 @@ const About = () => {
                           </defs>
                         </svg>
                       </span>
-                      <span className="absolute right-0 top-0 -z-10">
+                      <span className="absolute top-0 right-0 -z-10">
                         <svg
                           width="130"
                           height="97"
@@ -145,7 +136,7 @@ const About = () => {
                           </defs>
                         </svg>
                       </span>
-                      <span className="absolute bottom-0 right-0 -z-10">
+                      <span className="absolute right-0 bottom-0 -z-10">
                         <svg
                           width="175"
                           height="104"

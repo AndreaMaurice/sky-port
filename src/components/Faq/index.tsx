@@ -3,7 +3,7 @@ import SingleFaq from "./SingleFaq";
 
 const Faq = () => {
   return (
-    <section className="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]">
+    <section className="dark:bg-dark relative z-20 overflow-hidden bg-white pt-20 pb-8 lg:pt-[120px] lg:pb-[50px]">
       <div className="container">
         <SectionTitle
           subtitle="FAQ"
@@ -16,38 +16,38 @@ const Faq = () => {
         <div className="-mx-4 mt-[60px] flex flex-wrap lg:mt-20">
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="How to use TailGrids?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="What web development services do you offer?"
+              answer="We provide end-to-end web development: responsive frontend (Next.js/React), backend APIs, integrations, CMS implementations, e‑commerce, and accessibility & SEO optimisations."
             />
             <SingleFaq
-              question="How to download icons from LineIcons?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="How do you ensure performance and SEO?"
+              answer="We use SSR/SSG with Next.js, image optimisation, code-splitting, Lighthouse audits, critical CSS and SEO best practices (meta tags, structured data) to maximise speed and discoverability."
             />
             <SingleFaq
-              question="Is GrayGrids part of UIdeck?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Which tech stack do you recommend?"
+              answer="We typically use Next.js, TypeScript, Tailwind CSS, and serverless/backends (Vercel, AWS). For CMS needs we can use WordPress, Duda, or Webflow."
             />
           </div>
 
           <div className="w-full px-4 lg:w-1/2">
             <SingleFaq
-              question="Can I use this template for commercial project?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="How much will a production website cost?"
+              answer="Costs vary by scope; brochure sites typically start around $3k–$8k, while feature-rich products often range $8k–$40k. We provide transparent proposals and milestone-based pricing."
             />
             <SingleFaq
-              question="Do you have plan to releasing Play Pro?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="How do you handle hosting, deployment and security?"
+              answer="We set up CI/CD, deploy to Vercel/Netlify/AWS, enforce HTTPS, backups, and security best practices (WAF, rate-limiting, monitoring)."
             />
             <SingleFaq
-              question="Where and how to host this template?"
-              answer="It takes 2-3 weeks to get your first blog post ready. That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+              question="Do you provide post-launch support and maintenance?"
+              answer="Yes — we offer ongoing support: performance monitoring, security updates, backups, and continuous feature work via retainers or ad‑hoc engagements."
             />
           </div>
         </div>
       </div>
 
       <div>
-        <span className="absolute left-4 top-4 -z-[1]">
+        <span className="absolute top-4 left-4 -z-1">
           <svg
             width="48"
             height="134"
@@ -337,7 +337,7 @@ const Faq = () => {
             />
           </svg>
         </span>
-        <span className="absolute bottom-4 right-4 -z-[1]">
+        <span className="absolute right-4 bottom-4 -z-1">
           <svg
             width="48"
             height="134"
