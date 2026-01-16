@@ -9,26 +9,27 @@ const Footer = () => {
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
+          <div className="w-full px-4 lg:w-1/2 xl:w-4/12">
             <div className="mb-10 w-full">
-              <Link href="/" className="mb-6 inline-block max-w-[160px]">
+              <Link href="/" className="mb-6 inline-block max-w-40">
                 <Image
-                  src="/images/logo/logo-white.svg"
+                  src="/images/logo/logo-wht-hori.png"
                   alt="logo"
                   width={140}
                   height={30}
                   className="max-w-full"
                 />
               </Link>
-              <p className="mb-8 max-w-[270px] text-base text-gray-7">
-                We create digital experiences for brands and companies by using
-                technology.
+              <p className="text-gray-7 mb-8 w-full text-base md:max-w-[350px]">
+                We create thoughtful digital experiences that help brands and
+                companies connect with their audiences through design,
+                technology, and strategy.
               </p>
               <div className="-mx-3 flex items-center">
                 <Link
                   aria-label="social link"
                   href="#"
-                  className="px-3 text-gray-7 hover:text-white"
+                  className="text-gray-7 px-3 hover:text-white"
                 >
                   <svg
                     width="22"
@@ -44,7 +45,7 @@ const Footer = () => {
                 <Link
                   aria-label="social link"
                   href="#"
-                  className="px-3 text-gray-7 hover:text-white"
+                  className="text-gray-7 px-3 hover:text-white"
                 >
                   <svg
                     width="22"
@@ -60,7 +61,7 @@ const Footer = () => {
                 <Link
                   aria-label="social link"
                   href="#"
-                  className="px-3 text-gray-7 hover:text-white"
+                  className="text-gray-7 px-3 hover:text-white"
                 >
                   <svg
                     width="22"
@@ -78,7 +79,7 @@ const Footer = () => {
                 <Link
                   aria-label="social link"
                   href="#"
-                  className="px-3 text-gray-7 hover:text-white"
+                  className="text-gray-7 px-3 hover:text-white"
                 >
                   <svg
                     width="22"
@@ -94,7 +95,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+          <div className="w-full px-4 lg:w-1/2 xl:w-2/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
                 About Us
@@ -102,122 +103,66 @@ const Footer = () => {
               <ul>
                 <li>
                   <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    href="/"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
                     Home
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    href="/about"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
                     About
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    href="/contact"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
-                    Testimonial
+                    Contact
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+
+          <div className="w-full px-4 lg:w-1/2 xl:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
-                Features
+                Services Offered
               </h4>
               <ul>
                 <li>
                   <Link
                     href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
-                    How it works
+                    Web Development
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
-                    Privacy policy
+                    UI/UX Design
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
-                    Terms of Service
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Refund policy
+                    Maintenance &amp; Optimization
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
-            <div className="mb-10 w-full">
-              <h4 className="mb-9 text-lg font-semibold text-white">
-                Our Products
-              </h4>
-              <ul>
-                <li>
-                  <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    LineIcons
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    Next.js Templates
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    TailAdmin
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
-                  >
-                    PlainAdmin
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
+          <div className="w-full px-4 lg:w-1/2 xl:w-3/12">
             <div className="mb-10 w-full">
               <h4 className="mb-9 text-lg font-semibold text-white">
                 Useful Links
@@ -226,7 +171,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
                     FAQ
                   </Link>
@@ -234,25 +179,25 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
-                    Blogs
+                    Privacy policy
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
-                    Support
+                    Legal notice
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="#"
-                    className="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    className="text-gray-7 hover:text-primary mb-3 inline-block text-base"
                   >
-                    About
+                    Terms of service
                   </Link>
                 </li>
               </ul>
@@ -263,43 +208,11 @@ const Footer = () => {
 
       <div className="mt-12 border-t border-[#8890A4]/40 py-8 lg:mt-[60px]">
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-2/3 lg:w-1/2">
-              <div className="my-1">
-                <div className="-mx-3 flex items-center justify-center md:justify-start">
-                  <Link
-                    href="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Privacy policy
-                  </Link>
-                  <Link
-                    href="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Legal notice
-                  </Link>
-                  <Link
-                    href="#"
-                    className="px-3 text-base text-gray-7 hover:text-white hover:underline"
-                  >
-                    Terms of service
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="w-full px-4 md:w-1/3 lg:w-1/2">
-              <div className="my-1 flex justify-center md:justify-end">
-                <p className="text-base text-gray-7">
-                  Designed and Developed by{" "}
-                  <Link
-                    href="https://tailgrids.com"
-                    rel="nofollow noopner noreferrer"
-                    target="_blank"
-                    className="text-gray-1 hover:underline"
-                  >
-                    TailGrids and Next.js Templates
-                  </Link>
+          <div className="flex flex-wrap">
+            <div className="w-full">
+              <div className="my-1 flex justify-center">
+                <p className="text-gray-7 text-base">
+                  © 2026 Sky Creatives. All Rights Reserved.
                 </p>
               </div>
             </div>
@@ -308,15 +221,15 @@ const Footer = () => {
       </div>
 
       <div>
-        <span className="absolute left-0 top-0 z-[-1] aspect-[95/82] w-full max-w-[570px]">
+        <span className="absolute top-0 left-0 z-[-1] aspect-95/82 w-full max-w-[570px]">
           <Image src="/images/footer/shape-1.svg" alt="shape" fill />
         </span>
 
-        <span className="absolute bottom-0 right-0 z-[-1] aspect-[31/22] w-full max-w-[372px]">
+        <span className="absolute right-0 bottom-0 z-[-1] aspect-31/22 w-full max-w-[372px]">
           <Image src="/images/footer/shape-3.svg" alt="shape" fill />
         </span>
 
-        <span className="absolute right-0 top-0 z-[-1]">
+        <span className="absolute top-0 right-0 z-[-1]">
           <svg
             width="102"
             height="102"
