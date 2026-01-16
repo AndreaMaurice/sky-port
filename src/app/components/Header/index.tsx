@@ -45,7 +45,7 @@ const Header = () => {
       <header
         className={`ud-header top-0 left-0 z-40 flex w-full items-center ${
           sticky
-            ? "shadow-nav border-stroke dark:border-dark-3/20 dark:bg-dark/10 fixed z-999 border-b bg-white/80 backdrop-blur-[5px]"
+            ? "shadow-nav border-stroke dark:border-dark-3/20 dark:bg-dark/10 fixed z-999 border-b bg-white/80 py-2 backdrop-blur-[5px]"
             : "absolute bg-transparent"
         }`}
       >
@@ -137,7 +137,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar border-body-color/50 dark:border-body-color/20 dark:bg-dark-2 absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:bg-transparent! lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
+                  className={`navbar dark:bg-dark-2 absolute right-0 z-30 w-[250px] rounded border-[.5px] bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:bg-transparent! lg:p-0 lg:opacity-100 lg:dark:bg-transparent ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -162,7 +162,7 @@ const Header = () => {
                             <Link
                               scroll={false}
                               href={menuItem.path}
-                              className={`ud-menu-scroll flex py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
+                              className={`ud-menu-scroll flex px-4 py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
                                 sticky
                                   ? "text-dark group-hover:text-primary dark:group-hover:text-primary dark:text-white"
                                   : "text-body-color lg:text-white dark:text-white"
@@ -207,7 +207,7 @@ const Header = () => {
                               className={`ud-menu-scroll flex items-center justify-between py-2 text-base lg:inline-flex lg:px-0 lg:py-6 ${
                                 sticky
                                   ? "text-dark group-hover:text-primary dark:group-hover:text-primary dark:text-white"
-                                  : "text-white"
+                                  : "text-body-color group-hover:text-primary dark:group-hover:text-primary lg:text-white dark:text-white"
                               }`}
                             >
                               {menuItem.title}
