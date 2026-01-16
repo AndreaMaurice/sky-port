@@ -1,7 +1,12 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
 const About = () => {
+  const pathname = usePathname();
+
   return (
     <section
       id="about"
@@ -23,12 +28,14 @@ const About = () => {
                   grow confidently as traction and users increase.
                 </p>
 
-                <Link
-                  href="/about"
-                  className="bg-primary hover:bg-primary/90 inline-flex items-center justify-center rounded-md px-7 py-3 text-center text-base font-medium text-white duration-300"
-                >
-                  Know More
-                </Link>
+                {!pathname?.startsWith("/about") && (
+                  <Link
+                    href="/about"
+                    className="bg-primary hover:bg-primary/90 inline-flex items-center justify-center rounded-md px-7 py-3 text-center text-base font-medium text-white duration-300"
+                  >
+                    Know More
+                  </Link>
+                )}
               </div>
             </div>
 
@@ -59,8 +66,14 @@ const About = () => {
 
                   <div className="bg-primary relative z-10 mb-4 flex items-center justify-center overflow-hidden px-6 py-12 sm:mb-8 sm:h-40 sm:p-5 lg:mb-4 xl:mb-8">
                     <div>
-                      <span className="block text-5xl font-extrabold text-white">
-                        Logo
+                      <span className="block text-white">
+                        <Image
+                          src="/images/logo/favicon.png"
+                          alt="Sky Creatives logo"
+                          width={56}
+                          height={56}
+                          className="mx-auto object-contain"
+                        />
                       </span>
                     </div>
                     <div>

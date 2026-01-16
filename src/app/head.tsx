@@ -7,7 +7,7 @@ export default function Head() {
         name="description"
         content="Sky Creatives is a creative agency specializing in innovative design and digital solutions. We help businesses build their brand and engage their audience through cutting-edge technology and creative strategies."
       />
-      <link rel="icon" href="/images/favicon.ico" />
+      <link rel="icon" href="/images/logo-wht-sqr.png" />
     </>
   );
 }
